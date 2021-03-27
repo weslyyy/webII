@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Wesly De Andrade Moraes">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script type="text/javascript" src="../js/script.js"></script>
+  <title>Login</title>
+</head>
+
+<body>
+  <main id="principal">
+    <section id="tela_login">
+      <h1>Entrar</h1>
+      <form class="row g-3" action="../controller/usuario.controller.php?op=loga" method="post">
+        <div class="row g-3">
+          <div class="col-md-12">
+            <label class="form-label">Email</label>
+            <input type="email" name="input-email" class="form-control" placeholder="Digite seu email">
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-12">
+            <label class="form-label">Senha</label>
+            <div class="input-group">
+              <input type="password" name="input-senha" class="form-control" id="senha" placeholder="Digite sua senha">
+              <button type="button" onclick="mostrarSenha(); ativarEye();" class="btn btn-primary">
+                <svg id="bi-eye-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                </svg>
+                <svg id="bi-eye-slash-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                  <path d="M10.79 12.912l-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.027 7.027 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.088z" />
+                  <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708l-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6l-12-12 .708-.708 12 12-.708.707z" />
+                </svg>
+                <script>
+                  function ativarEye() {
+                    var eye1 = document.getElementById("bi-eye-fill");
+                    var eye2 = document.getElementById("bi-eye-slash-fill");
+                    if (eye1.style.display === "none") {
+                      eye1.style.display = "block";
+                      eye2.style.display = "none";
+                    } else {
+                      eye1.style.display = "none";
+                      eye2.style.display = "block";
+                    }
+                  }
+                </script>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-6">
+            <button type="submit" class="btn btn-primary">Continuar</button>
+          </div>
+          <div id="link_cadastrar" class="col-6">
+            <a href="cadastra.usuario.html">Ainda não é cadastrado?</a>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>

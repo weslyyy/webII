@@ -1,0 +1,14 @@
+{
+    "name": "wesly/projeto_final",
+    "description": "Projeto final de WEBII PHP",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wesly de Andrade Moraes",
+            "email": "weslydeandrademoraes@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
