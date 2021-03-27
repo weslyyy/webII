@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+* {
+  font-family: arial;
+}
+
+strong {
+  color: #2580ba;
+}
+
+p {
+  font-size: 1.3vw;
+  line-height: 1.2;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #3c3844;
+  color: white;
+}
+
+#principal {
+  width: 80%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#menu {
+  width: 100%;
+  height: 56px;
+  background-color: #000000;
+  top: 0;
+  transition: top 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+#menu a {
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  font-size: 1.6vw;
+}
+
+#drop-botao {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-size: 1.6vw;
+  border: none;
+}
+
+#drop-botao {
+  background-color: black;
+}
+
+#menu a:hover, #drop-botao:hover {
+  background-color: #eeeeee;
+  color: black;
+}
+
+#drop {
+  position: relative;
+  display: inline-block;
+}
+
+#drop-conteudo {
+  background-color: #f3f3f3f3;
+  display: none;
+}
+
+#drop:hover #drop-botao {
+  color: black;
+  background-color: #f3f3f3f3;
+}
+
+#drop:hover #drop-conteudo {
+  display: block;
+}
+
+#drop-conteudo {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+#drop-conteudo a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#drop-conteudo a:hover {
+  background-color: #ddd;
+}
+
+#cabecalho {
+  background-color: #212232;
+  width: 100%;
+  height: 200px;
+  padding: 1%;
+}
+
+#conteudo {
+  width: 100%;
+  height: 499px;
+}
